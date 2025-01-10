@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--El chartset me permite utilizar cracteres especiales-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <!--esilo ccs-->
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+
+
+    <!--<h1>Primera página web</h1>
+    <h2>Primera página</h2>
+    <h3>Primera página</h3>
+    <h4>Primera página</h4>
+    <h5>Primera página</h5>
+    <h6>Primera página</h6>-->
+    <section class="container">
+        <!--cabezera de pagina web-->
+        <div>
+            <header>
+                <!--Titulo principal-->
+                <h1>Mi pagina de juegos</h1>
+                <nav>
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#sobrenosotros" class="nav-link">Sobre Nosotros</a>
+                    <a href="https://es-la.facebook.com/login/device-based/regular/login/" class="nav-link">Contacto</a>
+                    <a href="#calendario" class="nav-link">Calendario</a>
+                </nav>
+            </header>
+        </div> <!--Fin del header-->
+        <!--Contenido Principal-->
+        <div>
+            <section id="Inicio" class="section">
+                <h2>Bienvenido a mi pagina de juegos 2025</h2>
+                <p>Los juegos mas esperados del año</p>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="img/Web.jpg" alt="web">
+                        <img src="img/foto1.jpeg" alt="">
+                        <img src="img/Foto2.jpeg" alt="">
+                        <img src="img/Foto3.jpeg" alt="">
+                    
+                    </div>
+
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">Back</button>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">Next</button>
+                </div>
+            </section> <!--Fin Incio-->
+            <!--sobre nosotros-->
+            <section id="sobrenosotros" class="section">
+                <h2>Juegos desarrollados</h2>
+                <ol>
+                    <li>Fútbol</li>
+                    <li>Carros</li>
+                    <li>Peleas</li>
+                    <li>Puzzles</li>
+                </ol>
+
+            </section><!--Fin sobre nosotros-->
+            <!--calendario de desarrollo-->
+            <section id="calendario" class="section">
+                <h2>Calendario de desarrollo</h2>
+                <table border="1">
+                    <tr>
+                        <th>id</th>
+                        <th>Fecha</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Imagen</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>12/12/2024</td>
+                        <td>Galactic</td>
+                        <td>Guerra</td>
+                        <td><img src="img/implosion.png" alt="implosion" width="200px" height="200px"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>13/01/2024</td>
+                        <td>Implosion</td>
+                        <td>Disparos</td>
+                        <td><img src="img/COD.webp" alt="Cod" width="200px" height="200px"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>7/8/2023</td>
+                        <td>Fallflat</td>
+                        <td>Peleas</td>
+                        <td><img src="img/fall.jpg" alt="fall" width="200px" height="200px"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>8/9/2022</td>
+                        <td>Dragon Ball</td>
+                        <td>Peleas</td>
+                        <td><img src="img/Dragon ball.webp" alt="dragon ball" width="200px" height="200px"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>8/12/2023</td>
+                        <td>GTA</td>
+                        <td>Accion</td>
+                        <td><img src="img/gta.jpg" alt="gta" width="200px" height="200px"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>9/9/2020</td>
+                        <td>Zelda</td>
+                        <td>Accion</td>
+                        <td><img src="img/zelda.jpg" alt="zelda" width="200px" height="200px"></td>
+                    </tr>
+                </table>
+
+            </section> <!---fin de tabla--->
+
+            <section id="formulario">
+                <h2>Manejo de formulario</h2>
+                <form action="" method="post">
+                    <div>
+                        <label for="nombre">Ingrese su nombre</label>
+                        <div>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                        </div>
+                        <!--Boton enviar-->
+                        <div>
+                            <label for="Password">Ingrese la contraseña</label>
+                            <div>
+                                <input type="password" name="password" id="password" placeholder="Ingrese su contraseña"
+                                    required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email">Ingrese su email</label>
+                            <div>
+                                <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">Seleccione su cuidad</label>
+                            <div>
+                                <select name="" id="">
+                                    <option value="">--Seleccione una opcion--</option>
+                                    <option value="Quito" selected>Quito</option>
+                                    <option value="Guayaquil">Guayaquil</option>
+                                    <option value="Cuenca">Cuenca</option>
+                                </select>
+                                <div class="form-control">
+                                    <label for="" class="form-label">Ingrese la direccion</label>
+                                    <textarea name="direccion" id="direccion" class="form-textarea"></textarea>
+                                </div>
+                            </div>
+                        
+                            <input type="submit" value="ENVIAR">
+                        </div>
+                    </div>
+                </form>
+
+            </section>
+        </div>
+
+    </section>
+    <script>
+        let currentIndex = 0;
+
+        function moveSlide(direction) {
+            //seleccionamos todas las imagenes
+            const slides = document.querySelectorAll('.carousel-inner img');
+            //Obtenemos numero de imagenes
+            const totalSlides = slides.length;
+            //actualizamos el indice actual sumando la direccion
+            currentIndex += direction;
+            //si el indice es menor a 0 vuelve al utlimo slide(ciclo infinito hacia adelante)
+            if (currentIndex >= totalSlides) {
+                currentIndex = 0;
+            }
+            //si el indice es menor a 0 vuelve al utlimo slide(ciclo infinito hacia atras)
+            if (currentIndex < 0) {
+                currentIndex = totalSlides - 1;
+            }
+            //calculamos el desplazamiento del carousel
+            const offset = -currentIndex * 100;
+            //aplicamos el desplazamiento mediante un transformacion ccs
+            document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+            //configuramos el cambio automatico de slide cada 5 segundos
+            setInterval(() => {
+                //llama a la funcion move slide
+                moveSlide(1);
+
+            }, 5000);
+
+        }
+    </script>
+</body>
+
+</html>

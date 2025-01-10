@@ -1,0 +1,80 @@
+/*Aplicar estilo a toda la etiqueta body*/
+body{
+    background-color: rgb(136, 192, 214);;
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+/*Le damos estilo a la clase container*/
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+
+}
+/*Estilos para el header*/
+header{
+    background-color: rgb(190, 140, 236);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Le damos estilos a las etiquetas que continen la clase nav-link*/
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+/*Una psudo clase es una clase que esta dentrp de otra clase 
+Aqui le vamos a dar un estilo de animacion al menu con la psudo clase hover*/
+.nav-link:hover{
+    text-decoration: underline;
+    color: darkslateblue;
+}
+
+/*Aplicamos estilos a todos los componentes que tengan la clase section*/
+.section{
+    padding: 30px;
+    text-align: center;
+
+}
+/*Aplicamos estilos a la clase carousel*/
+.carousel{
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+/*Le damos estilos a cada una de las imagenes que contengan la calse carousel-inner*/
+.carousel-inner{
+    display: flex;
+    transition: trasform 0,5 ease-in-out;
+}
+/*Le damos estilos a la etiqueta img*/
+.carousel-inner img{
+    min-width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+/*Le damos estilos a los botones del carousel*/
+.carousel-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    
+}
